@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+        namespace:
+        service: gateway
+    gateway:
+      discovery:
+        locator:
+          enabled: true

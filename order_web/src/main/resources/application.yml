@@ -1,0 +1,19 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: order-web
+
+dubbo:
+  application:
+    name: order-web
+    qos-port: 32222
+  protocol:
+    name: dubbo
+  registry:
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
+    use-as-config-center: false
+    parameters:
+      namespace: 11f0da81-888c-429e-8053-76695dfea77c

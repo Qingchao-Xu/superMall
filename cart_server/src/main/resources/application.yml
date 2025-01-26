@@ -1,0 +1,27 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: cart-server
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/cart?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+dubbo:
+  application:
+    name: cart-server
+  protocol:
+    name: dubbo
+    port: 20896
+  registry:
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
+    use-as-config-center: false
+    parameters:
+      namespace: 11f0da81-888c-429e-8053-76695dfea77c
