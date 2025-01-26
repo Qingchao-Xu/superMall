@@ -42,7 +42,7 @@
 ### 技术架构
 dubbo + SpringBoot + MyBatisPlus + Nacos + MySQL
 
-
+![抖音商城基础架构.png](files/picture/抖音商城基础架构.png)
 
 ### 数据库设计
 
