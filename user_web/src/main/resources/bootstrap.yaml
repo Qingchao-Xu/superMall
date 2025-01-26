@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
+        namespace:
+        prefix: user
+        file-extension: yaml
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
+        namespace:
